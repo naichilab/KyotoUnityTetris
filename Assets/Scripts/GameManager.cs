@@ -20,7 +20,6 @@ namespace HimonoLib
         private BlockViewer m_viewer    = new BlockViewer();
 
         private int[,]      m_field     = null;
-        private Dictionary< ETetrimino, int[,] >    m_tetrimonoTypes    = new Dictionary< ETetrimino, int[,] >();
 
         #endregion // Variable
 
@@ -235,8 +234,6 @@ namespace HimonoLib
 
 
             {
-                int clearLineCount  = 0;
-
                 for( int y = m_field.GetLength( 0 ) - 1; y >= 0; )
                 {
                     bool isClear    = true;
