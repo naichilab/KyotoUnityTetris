@@ -44,6 +44,10 @@ namespace HimonoLib
 
         private static Dictionary< ETetrimino, int[,] >    m_tetrimonoTypes    = null;
 
+        public const int EMPTY_COLOR    = (int)EBlockColor.None;
+        public const int WALL_COLOR     = (int)EBlockColor.White;
+        public const int CLASH_COLOR    = (int)EBlockColor.Black;
+
         #endregion // Variable
 
 
@@ -73,9 +77,6 @@ namespace HimonoLib
             { 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 },
             { 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 },
             { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 },
-            { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
-            { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
-            { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
         };
 
         #endregion // Field
